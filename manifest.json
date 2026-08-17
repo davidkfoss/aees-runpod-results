@@ -1767,12 +1767,12 @@
         "training_feedback_consulted": false
       },
       "policy": "frequency-matched",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-asym20_adamw_frequency-matched_seed0",
       "schedule_seed": 862196343,
       "seed": 0,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -12381,12 +12381,12 @@
         "training_feedback_consulted": false
       },
       "policy": "frequency-matched",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-asym20_adamw_frequency-matched_seed1",
       "schedule_seed": 937064373,
       "seed": 1,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -22995,12 +22995,12 @@
         "training_feedback_consulted": false
       },
       "policy": "frequency-matched",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-asym20_adamw_frequency-matched_seed2",
       "schedule_seed": 886100927,
       "seed": 2,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -33609,12 +33609,12 @@
         "training_feedback_consulted": false
       },
       "policy": "frequency-matched",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-asym20_adamw_frequency-matched_seed3",
       "schedule_seed": 1786570335,
       "seed": 3,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -44223,12 +44223,12 @@
         "training_feedback_consulted": false
       },
       "policy": "frequency-matched",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-asym20_adamw_frequency-matched_seed4",
       "schedule_seed": 534983715,
       "seed": 4,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -53079,9 +53079,9 @@
   ],
   "schema_version": 1,
   "status_counts": {
-    "completed": 5,
+    "completed": 10,
     "failed": 0,
-    "pending": 55,
+    "pending": 50,
     "skipped": 0
   }
 }
