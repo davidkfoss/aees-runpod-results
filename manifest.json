@@ -6182,12 +6182,12 @@
         "training_feedback_consulted": false
       },
       "policy": "uniform-random",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-sym20_sgd_uniform-random_seed0",
       "schedule_seed": 597324606,
       "seed": 0,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -16796,12 +16796,12 @@
         "training_feedback_consulted": false
       },
       "policy": "uniform-random",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-sym20_sgd_uniform-random_seed1",
       "schedule_seed": 1605551768,
       "seed": 1,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -27410,12 +27410,12 @@
         "training_feedback_consulted": false
       },
       "policy": "uniform-random",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-sym20_sgd_uniform-random_seed2",
       "schedule_seed": 1424647,
       "seed": 2,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -38024,12 +38024,12 @@
         "training_feedback_consulted": false
       },
       "policy": "uniform-random",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-sym20_sgd_uniform-random_seed3",
       "schedule_seed": 1765260573,
       "seed": 3,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -48638,12 +48638,12 @@
         "training_feedback_consulted": false
       },
       "policy": "uniform-random",
-      "return_code": null,
+      "return_code": 0,
       "run_id": "cifar100-sym20_sgd_uniform-random_seed4",
       "schedule_seed": 2024915348,
       "seed": 4,
-      "status": "pending",
-      "status_detail": null,
+      "status": "completed",
+      "status_detail": "completed and validated",
       "total_steps": 78200
     },
     {
@@ -53079,9 +53079,9 @@
   ],
   "schema_version": 1,
   "status_counts": {
-    "completed": 30,
+    "completed": 35,
     "failed": 0,
-    "pending": 30,
+    "pending": 25,
     "skipped": 0
   }
 }
