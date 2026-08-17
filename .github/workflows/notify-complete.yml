@@ -1,0 +1,58 @@
+name: Notify when experiments complete
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - manifest.json
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: aees-completion-notification
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check completion and notify
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          completed="$(jq -r '.status_counts.completed // 0' manifest.json)"
+          echo "Completed runs: $completed"
+
+          if [[ "$completed" != "60" ]]; then
+            exit 0
+          fi
+
+          title="AEES CIFAR-100 experiments complete"
+
+          existing="$(
+            gh issue list \
+              --repo "$GH_REPO" \
+              --state all \
+              --limit 100 \
+              --json title \
+              --jq 'map(select(.title == "AEES CIFAR-100 experiments complete")) | length'
+          )"
+
+          if [[ "$existing" != "0" ]]; then
+            echo "Completion notification already exists."
+            exit 0
+          fi
+
+          gh issue create \
+            --repo "$GH_REPO" \
+            --title "$title" \
+            --assignee davidkfoss \
+            --body "All 60 CIFAR-100 attribution-control runs completed successfully and the results were backed up to this repository."
